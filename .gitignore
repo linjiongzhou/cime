@@ -1,0 +1,10 @@
+scripts
+!scripts/create_clone
+!scripts/create_newcase
+!scripts/create_test
+!scripts/manage_testlists
+!scripts/README
+!scripts/README.md
+!scripts/sample_pes_file.xml
+!scripts/Testing
+!scripts/Tools

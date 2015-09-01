@@ -1,0 +1,23 @@
+#! /bin/csh -f
+
+# -------------------------------------------------------------------------
+# USERDEFINED
+# Edit this file to add module load or other paths needed for the build
+# and run on the system.  Can also include general env settings for machine.
+# Some samples are below
+# -------------------------------------------------------------------------
+
+#source /opt/modules/default/init/csh
+#if ( $COMPILER == "pgi" ) then
+#  module load pgi
+#endif
+#module load netcdf
+
+#limit coredumpsize unlimited
+
+setenv INTEL_PATH /opt/intel/composer_xe_2013.5.192
+setenv MPI_PATH /usr/mpi/intel/openmpi-1.4.3-qlc
+setenv NETCDF_PATH /R2/zlj/SOFT/netcdf-4.1.3
+setenv HDF5_PATH /R2/zlj/SOFT/hdf5-1.8.9
+setenv ZLIB_PATH /R2/zlj/SOFT/zlib-1.2.7
+setenv LD_LIBRARY_PATH $INTEL_PATH/compiler/lib/intel64:$MPI_PATH/lib64:$NETCDF_PATH/lib:$HDF5_PATH/lib:$LD_LIBRARY_PATH

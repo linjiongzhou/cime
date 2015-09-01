@@ -295,7 +295,7 @@ for mct, etc.
   <ADD_SLIBS MPILIB="mpich"> -mkl=cluster </ADD_SLIBS>
   <ADD_SLIBS MPILIB="mpich2"> -mkl=cluster </ADD_SLIBS>
   <ADD_SLIBS MPILIB="mpt"> -mkl=cluster </ADD_SLIBS>
-  <ADD_SLIBS MPILIB="openmpi"> -mkl=cluster </ADD_SLIBS>
+  <ADD_SLIBS MPILIB="openmpi"> -mkl=cluster -L$(LIB_NETCDF) -lnetcdf -lnetcdff </ADD_SLIBS>
   <ADD_SLIBS MPILIB="impi"> -mkl=cluster </ADD_SLIBS>
   <ADD_SLIBS MPILIB="mpi-serial"> -mkl </ADD_SLIBS>
 
